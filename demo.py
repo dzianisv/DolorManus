@@ -14,7 +14,7 @@ class Servo(enum.Enum):
 
 state = {
     Servo.GRIP_RIGHT: -45.0,
-    Servo.WRIST_ROLL: 0.0,
+    Servo.WRIST_ROLL: 90.0,
     Servo.WRIST_FLEX: 0.0,
     Servo.ELBOW: 0.0,
     Servo.SHOULDER_LIFT: 0.0,
