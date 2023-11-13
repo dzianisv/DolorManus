@@ -24,7 +24,7 @@ def move(states):
         print(state)
         arm.setPosition([[servo_id.value, angle] for servo_id, angle in state.items()], wait=True)
 
-def push_power_button():
+def push_enter():
     cmds = [
         {
             Servo.ELBOW: 2100
@@ -34,4 +34,33 @@ def push_power_button():
     ]
     move(cmds)
 
-push_power_button()
+def push_power_button():
+    cmds = [
+        {
+            Servo.SHOULDER_PAN: 700,
+        },{
+            Servo.ELBOW: 2100
+        },{
+            Servo.ELBOW: 2600
+        },{
+            Servo.SHOULDER_PAN: 1100
+        }
+    ]
+
+    move(cmds)
+
+def shoulder_test():
+    cmds = [
+        {
+            Servo.SHOULDER_LIFT: 700,
+        },         {
+            Servo.SHOULDER_LIFT: 1500,
+        },         {
+            Servo.SHOULDER_LIFT: 2500,
+        }, 
+    ]
+
+    move(cmds)
+
+
+shoulder_test()
