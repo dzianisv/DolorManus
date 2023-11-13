@@ -21,11 +21,11 @@ class Servo(enum.Enum):
 
 state_1 = {
     # Servo.GRIP: 0.0,
-    Servo.WRIST_ROLL: 1,
-    Servo.WRIST_FLEX: 1,
-    Servo.ELBOW: 1,
-    Servo.SHOULDER_LIFT: 1,
-    Servo.SHOULDER_PAN: 1
+    Servo.WRIST_ROLL: 100,
+    Servo.WRIST_FLEX: 100,
+    Servo.ELBOW: 100,
+    Servo.SHOULDER_LIFT: 100,
+    Servo.SHOULDER_PAN: 100
 }
 
 state_2 = {
@@ -47,11 +47,11 @@ state_3 = {
 }
 
 
-arm = xarm.Controller('USB')
+arm = xarm.Controller('USB', debug=True)
+arm.actionGroupRun(0)
 
-
-for servo_id in Servo:
-    arm.servoOff(servo_id.value)
+# for servo_id in Servo:
+#     arm.servoOff(servo_id.value)
 
 
 # for state in [state_1, state_2]:
