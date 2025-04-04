@@ -1,4 +1,4 @@
-# Robotic Arm Kit 6DOF Programming Robot Arm with 5 Servo, Handle, Mechanical Claw and More, PC Software APP Control with Tutorial 
+# Robotic Arm Kit 6DOF Programming Robot Arm with 5 Servo
 
 
 [Amazon](https://amzn.to/4jiTcto)
