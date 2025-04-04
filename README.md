@@ -1,3 +1,8 @@
+# Goals
+
+- Mix cocktails
+- Cook eggs
+
 # Robotic Arm Kit 6DOF Programming Robot Arm with 5 Servo
 
 
